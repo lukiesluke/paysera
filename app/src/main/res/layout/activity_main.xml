@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        tools:context=".MainActivity">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/availableBalanceTv"
+                android:text="@string/available_balance"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/small"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/totalTransactionTv"
+                android:text="@string/total_transaction"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/availableBalanceTv"
+                android:layout_marginStart="@dimen/small"
+                android:layout_height="wrap_content"/>
+
+        <ImageButton android:id="@+id/settingBtn"
+                     android:layout_width="wrap_content"
+                     android:src="@android:drawable/ic_secure"
+                     android:layout_alignParentEnd="true"
+                     android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/totalTransactionChargeTv"
+            android:text="@string/total_transaction_charge"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/small"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:text="Convert Currency"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/small"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small"
+                android:gravity="end"
+                android:hint="0"
+                android:padding="@dimen/small"
+                android:background="@drawable/rounded_corner"
+                android:inputType="numberDecimal|numberSigned"
+                android:layout_weight="1"
+                android:id="@+id/convertValueEdTxt"/>
+
+        <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/small"
+                android:prompt="@string/currency_prompt"
+                android:layout_marginEnd="@dimen/small"
+                android:spinnerMode="dialog"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/convertBtn"
+            android:layout_width="match_parent"
+            android:text="@string/convert"
+            android:background="@drawable/btn_selector"
+            android:layout_marginTop="@dimen/Large"
+            android:layout_marginBottom="@dimen/Large"
+            android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            tools:listitem="@layout/recyclerview_item"/>
+</LinearLayout>

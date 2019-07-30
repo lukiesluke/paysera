@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="currency_pad">10dp</dimen>
+    <dimen name="small">5dp</dimen>
+    <dimen name="medium">10dp</dimen>
+    <dimen name="Large">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

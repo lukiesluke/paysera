@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PaySera</string>
+    <string name="currency_prompt">Select Currency</string>
+    <string name="available_balance">Available balance: %s %s</string>
+    <string name="messageConversionInfo">"You have converted \n%1s %2s to %3s %4s.\nCommission Fee - %5s %6s</string>
+    <string name="convert">Convert</string>
+    <string name="total_transaction">Total transaction:</string>
+    <string name="total_transaction_charge">Total transaction charge: 0.00 %s</string>
+    <string name="balance_setup">Balance setup</string>
+    <string name="okay">OK</string>
+    <string name="alert">Alert!</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="error_please_enter_amount">Please enter amount</string>
+    <string name="error_unable_to_convert">Unable to convert not enough balance</string>
+    <string name="error_please_check_internet">Please check your internet connection</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>
